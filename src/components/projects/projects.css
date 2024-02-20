@@ -1,0 +1,77 @@
+.container {
+    position: fixed;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overlay {
+    position: fixed;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.502);
+    height: 100vh;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects__title {
+    position: relative;
+    padding: 20px;
+}
+.projects__title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem; /* Ancho del borde izquierdo */
+    height: 4rem; /* Altura del borde superior */
+    border-top: 2px solid var(--text-color-third); /* Grosor y color del borde superior */
+    border-right:  2px solid var(--text-color-secondary); /* Grosor y color del borde izquierdo */
+    box-sizing: border-box;
+}
+
+
+.projects__title h3 {
+    color: var(--text-color-third);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.projects__title p {
+    color: var(--text-color-secondary);
+}
+
+
+.title__proyect {
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    color: rgb(228, 228, 228);
+}
+
+.title__subproyect {
+    margin-top: -.2rem;
+    color: rgb(192, 192, 192);
+}
+
+.text__proyect {
+    color: var(--text-color-secondary);
+}
+
+.tools {
+    position: relative;
+    padding: 20px;
+}
+
+.tools::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem; /* Ancho del borde izquierdo */
+    height: 4rem; /* Altura del borde superior */
+    border-top: 2px solid var(--text-color-third); /* Grosor y color del borde superior */
+    border-left:  2px solid var(--text-color-secondary); /* Grosor y color del borde izquierdo */
+    box-sizing: border-box;
+}

@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Pregúntale al Experto",
+        "subtitle":"Página profesional funcional de salud",
+        "description":".",
+        "tools": ["react","javascript","tailwind","vite","nodejs"],
+        "github": "",
+        "youtube": "",
+        "demo": "",
+        "year": "2024",
+        "keyword": "Frontend + Full Stack",
+        "type": "Práctica",
+        "important": "PAGADO"
+    },
+    {
+        "title": "Visual: CHAT-GPT3",
+        "subtitle":"Página visual/frontend temática moderna",
+        "description":"Visual con temática CHAT-GPT3 basada en un curso básico y práctico de react, primer contacto con el framework. Simplemente frontend, no contiene backend o funcionalidades relacionadas.",
+        "tools": ["react","javascript"],
+        "github": "",
+        "youtube": "",
+        "demo": "https://super-liger-8f02f6.netlify.app",
+        "year": "2024",
+        "keyword": "Frontend",
+        "type": "Curso online",
+        "important": ""
+    }
+    ,{
+        "title": "Diabetes Care",
+        "subtitle":"Proyecto TIC con hardware y software",
+        "description":"Aplicación Web Simple conectada a ESP-32 mediante Arduino. Objetivo: medir la temperatura cada cierto tiempo y monitorear la presencia de medicamentos de insulina con botones de presión. Enfocado a pacientes con diabetes, permitiendo organizar y prevenir las dosis.",
+        "tools": ["arduino","nodejs","javascript"],
+        "github": "https://github.com/benjamin09111/ticsproject",
+        "youtube": "https://www.youtube.com/watch?v=OOu4HkOX-tw",
+        "demo": "",
+        "year": "2023",
+        "keyword": "TIC Full Stack",
+        "type": "Proyecto TIC",
+        "important": ""
+    },
+    {
+        "title": "Unity Bank",
+        "subtitle":"Web de transferencias funcional",
+        "description":"Proyecto Full Stack de término de curso de Desarrollo Web en la Universidad Diego Portales. Sistema de transferencias funcional, login, register, historial, dinero simulado, envío y recepción.",
+        "tools": ["javascript","handlebars", "mongodb", "aws"],
+        "github":"",
+        "youtube":"https://www.youtube.com/watch?v=wfJzPWYy_mA&feature=youtu.be",
+        "demo":"",
+        "year":"2022",
+        "keyword":"Web Full Stack",
+        "type":"Universidad",
+        "important": ""
+    }
+]

@@ -1,0 +1,37 @@
+.docencia__content1, .docencia__content2 {
+    position: relative;
+    padding: 20px;
+}
+
+.docencia__content1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem; /* Ancho del borde izquierdo */
+    height: 4rem; /* Altura del borde superior */
+    border-top: 2px solid var(--text-color-third); /* Grosor y color del borde superior */
+    border-left:  2px solid var(--text-color-secondary); /* Grosor y color del borde izquierdo */
+    box-sizing: border-box;
+}
+
+.docencia__content2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem; /* Ancho del borde izquierdo */
+    height: 4rem; /* Altura del borde superior */
+    border-top: 2px solid var(--text-color-third); /* Grosor y color del borde superior */
+    border-right:  2px solid var(--text-color-secondary); /* Grosor y color del borde izquierdo */
+    box-sizing: border-box;
+}
+
+.docencia__button {
+    background: var(--text-color-third);
+    transition: background .2s ease;
+}
+
+.docencia__button:hover {
+    background: gray;
+}

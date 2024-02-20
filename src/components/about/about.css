@@ -1,0 +1,30 @@
+.about__container {
+    height: 100vh;
+}
+
+.about__content {
+    position: relative;
+    padding: 10px;
+}
+
+.about__content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem; /* Ancho del borde izquierdo */
+    height: 4rem; /* Altura del borde superior */
+    border-top: 2px solid var(--text-color-third); /* Grosor y color del borde superior */
+    border-left:  2px solid var(--text-color-secondary); /* Grosor y color del borde izquierdo */
+    box-sizing: border-box;
+}
+
+.about__container a {
+    background: var(--text-color-third);
+    font-weight: 500;
+    transition: background .2s ease;
+}
+
+.about__container a:hover {
+    background: rgb(95, 99, 101);
+}

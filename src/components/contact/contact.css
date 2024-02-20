@@ -1,0 +1,16 @@
+.contact__content {
+    position: relative;
+    padding: 20px;
+}
+
+.contact__content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem; /* Ancho del borde izquierdo */
+    height: 4rem; /* Altura del borde superior */
+    border-top: 2px solid var(--text-color-third); /* Grosor y color del borde superior */
+    border-right:  2px solid var(--text-color-secondary); /* Grosor y color del borde izquierdo */
+    box-sizing: border-box;
+}

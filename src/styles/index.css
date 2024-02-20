@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #040404;
+    --primary-color-gradient: linear-gradient(271deg, rgba(0, 0, 0, 1) 0%, rgba(20, 20, 20, 1) 100%);
+    --secondary-color: #3f3d5610;
+    --third-color: #008da9;
+    --bg-gradient: linear-gradient(271deg, rgba(0, 161, 193, 1) 0%, rgba(0, 200, 240, 1) 100%);
+    --text-color: #ebebeb;
+    --text-color-secondary: #adadad;
+    --text-color-third: #00accf;
+
+    --font-family: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+.title_section {
+    color: var(--text-color-third);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.subtitle_section {
+    color: var(--text-color-secondary);
+}
+
+.slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-25%);
+        transform: translateY(-25%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        -webkit-transform: translateY(-25%);
+        transform: translateY(-25%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

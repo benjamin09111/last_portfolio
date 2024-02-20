@@ -1,0 +1,55 @@
+.app__navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999999;
+    transition: top 0.3s ease-in-out;
+}
+
+.app__navbar--hidden {
+    top: -10vh;
+}
+
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.972);
+    transform: 0.5s ease;
+
+    flex-direction: column;
+    z-index: 9999;
+}
+
+.button-close-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+
+.app__navbar-smallscreen-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.app__navbar-button-exit {
+    font-size: 2rem;
+    background: none;
+    margin: 1rem 0rem 0rem 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.app__navbar-smallscreen-links a {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
