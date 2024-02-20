@@ -22,8 +22,8 @@ const Projects = () => {
     const [popUp, setPopUp] = useState(false);
 
     return (
-        <section id="proyects" classNameName="flex flex-col px-8 justify-center items-center gap-12 mb-4">
-            <div classNameName="md:flex md:w-2/3 md:ml-4 md:justify-end">
+        <section id="proyects" className="flex flex-col px-8 justify-center items-center gap-12 mb-4">
+            <div className="md:flex md:w-2/3 md:ml-4 md:justify-end">
                 <div className="projects__title flex flex-col items-end ">
                     <h3 className="text-3xl">Proyectos</h3>
                     <p className="text-right">Conoce mis proyectos realizados desde 2022. Se ordenan por fecha de creación.</p>
@@ -31,7 +31,7 @@ const Projects = () => {
             </div>
             <div className="flex flex-col md:px-24 gap-8 md:w-full md:items-start md:flex-row flex-wrap md:justify-center md:mb-16">
                 {projects.map((project, index) => (
-                    <article className="h-2 flex bg-gray-950 flex-col border border-gray-900 rounded md:w-96 md:h-auto">
+                    <article className="flex bg-gray-950 flex-col border border-gray-900 rounded md:w-96 md:h-auto">
                         {
                             popUp && (
                                 <PopUp title={project.title} subtitle={project.subtitle} description={project.description} setPopUp={setPopUp}/>
@@ -41,8 +41,8 @@ const Projects = () => {
                             {
                                 project.important !== "" && (<p className="bg-yellow-600 p-1 rounded text-xs">{project.important}</p>)
                             }
-                            <p className="bg-blue-400 p-1 rounded text-xs">{project.keyword}</p>
                             <p className="bg-red-700 p-1 rounded text-xs">{project.type}</p>
+                            <p className="bg-blue-400 p-1 rounded text-xs">{project.keyword}</p>
                         </div>
                         <div className="bg-cover bg-center flex items-center justify-center w-full h-60"
                         style={{backgroundImage: `url(${images[index]})`}}>
@@ -76,23 +76,23 @@ const Projects = () => {
                                 ) : project.description.slice(0,100)}
                             </div>
                             <div className="flex items-center justify-start gap-2 pl-1">
-                                <p className="underline">Acciones: </p>
+                                <p className="underline text-gray-400">Acciones: </p>
                                 {
                                     project.youtube != "" &&
                                     <a className="text-4xl hover:text-gray-700" target="_blank" href={project.youtube}>
-                                        <span className="icon-[mdi--youtube]"></span>
+                                        <span className="icon-[mdi--youtube] text-white"></span>
                                     </a>
                                 }
                                 {
                                     project.github != "" &&
                                     <a className="text-4xl hover:text-gray-700" target="_blank" href={project.github}>
-                                        <span classname="icon-[mdi--github]"></span>
+                                        <span classname="icon-[mdi--github] text-white"></span>
                                     </a>
                                 }
                                 {
                                     project.demo != "" &&
                                     <a className="text-4xl hover:text-gray-700" target="_blank" href={project.demo}>
-                                        <span className="icon-[icon-park-outline--upload-web]"></span>
+                                        <span className="icon-[icon-park-outline--upload-web] text-white"></span>
                                     </a>
                                 }
                             </div>
@@ -149,7 +149,7 @@ const Projects = () => {
             <div className="projects__title mb:flex flex-col items-end hidden">
                 <div className="flex flex-col items-end">
                     <h3 className="text-2xl">Proyectos</h3>
-                    <p className="text-right">Conoce mis proyectos realizados desde 2022. Se ordenan por fecha de creación.</p>
+                    <p className="text-right">Conoce mis proyectos realizados desde 2022.</p>
                     <div className="tools hidden md:block">
                         <h4>Tecnologías dominantes y utilizadas en los proyectos</h4>
                     </div>
