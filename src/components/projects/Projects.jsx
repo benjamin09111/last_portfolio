@@ -1,4 +1,4 @@
-import {useState} from "react"
+import { useState } from "react"
 import projects from "../../data/projects.json"
 import images from "../../data/images.js"
 import tools from "../../data/icontool.js"
@@ -7,19 +7,26 @@ import "./projects.css"
 
 const olderProyect = {
     "title": "File System C++",
-    "subtitle":"Simulación sistema de archivos",
-    "description":"Tarea final del curso de sistemas operativos en donde se simula un file system solamente con código C++, mediante una estructura de árbol creada se agregan, eliminan y mueven archivos o carpetas a diferentes rutas creadas.",
+    "subtitle": "Simulación sistema de archivos",
+    "description": "Tarea final del curso de sistemas operativos en donde se simula un file system solamente con código C++, mediante una estructura de árbol creada se agregan, eliminan y mueven archivos o carpetas a diferentes rutas creadas.",
     "tools": ["c++"],
-    "github":"",
-    "youtube":"https://www.youtube.com/watch?v=kdRlOmmDSP0",
-    "demo":"",
-    "year":"2023",
-    "keyword":"Software C++",
-    "type":"Universidad"
+    "github": "",
+    "youtube": "https://www.youtube.com/watch?v=kdRlOmmDSP0",
+    "demo": "",
+    "year": "2023",
+    "keyword": "Software C++",
+    "type": "Universidad"
 }
 
 const Projects = () => {
-    const [popUp, setPopUp] = useState(false);
+    const [popUps, setPopUps] = useState({});
+
+    const togglePopUp = (index) => {
+        setPopUps(prevState => ({
+            ...prevState,
+            [index]: !prevState[index]
+        }));
+    };
 
     return (
         <section id="proyects" className="flex flex-col px-8 justify-center items-center gap-12 mb-4">
@@ -33,8 +40,15 @@ const Projects = () => {
                 {projects.map((project, index) => (
                     <article className="flex bg-gray-950 flex-col border border-gray-900 rounded md:w-96 md:h-auto">
                         {
-                            popUp && (
-                                <PopUp title={project.title} subtitle={project.subtitle} description={project.description} setPopUp={setPopUp}/>
+                            popUps[index] && (
+                                <PopUp data={
+                                    {
+                                        title: project.title,
+                                        date: project.year,
+                                        description: project.description,
+                                        setPopUp: () => togglePopUp(index)
+                                    }
+                                } />
                             )
                         }
                         <div className="h-8 flex gap-1 items-center justify-end px-4 py-6">
@@ -45,7 +59,7 @@ const Projects = () => {
                             <p className="bg-blue-400 p-1 rounded text-xs">{project.keyword}</p>
                         </div>
                         <div className="bg-cover bg-center flex items-center justify-center w-full h-60"
-                        style={{backgroundImage: `url(${images[index]})`}}>
+                            style={{ backgroundImage: `url(${images[index]})` }}>
                         </div>
                         <div className="flex flex-col px-1">
                             <div className="flex pl-1 pt-1 pb-1 text-xl">
@@ -68,12 +82,12 @@ const Projects = () => {
                             <div className="py-4 px-1 text-md text__proyect">
                                 {project.description.length > 100 ? (
                                     <div className="flex gap-1 justify-center items-center flex-col">
-                                        {project.description.slice(0,100)+"..."}
-                                        <b className="outline rounded w-1/2 cursor-pointer text-center" onClick={()=>setPopUp(true)}>
+                                        {project.description.slice(0, 100) + "..."}
+                                        <b className="outline rounded w-1/2 cursor-pointer text-center hover:text-white" onClick={() => togglePopUp(index)}>
                                             Leer completo
                                         </b>
                                     </div>
-                                ) : project.description.slice(0,100)}
+                                ) : project.description.slice(0, 100)}
                             </div>
                             <div className="flex items-center justify-start gap-2 pl-1">
                                 <p className="underline text-gray-400">Acciones: </p>
@@ -109,7 +123,7 @@ const Projects = () => {
                         <p className="bg-red-700 p-1 rounded text-xs">{olderProyect.type}</p>
                     </div>
                     <div className="bg-cover bg-center flex items-center justify-center w-full h-60"
-                    style={{backgroundImage: "url(/proyect_4.webp)"}}>
+                        style={{ backgroundImage: "url(/proyect_4.webp)" }}>
                     </div>
                     <div className="flex flex-col px-1">
                         <div className="flex pl-1 pt-1 pb-1 text-xl">
@@ -125,19 +139,19 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="py-4 px-1 text-md text__proyect">
-                                {olderProyect.description.length > 100 ? (
-                                    <div className="flex gap-1 justify-center items-center flex-col">
-                                        {olderProyect.description.slice(0,100)+"..."}
-                                        <b className="outline rounded w-1/2 cursor-pointer text-center" onClick={()=>setPopUp(true)}>
-                                            Leer completo
-                                        </b>
-                                    </div>
-                                ) : olderProyect.description.slice(0,100)}
+                            {olderProyect.description.length > 100 ? (
+                                <div className="flex gap-1 justify-center items-center flex-col">
+                                    {olderProyect.description.slice(0, 100) + "..."}
+                                    <b className="outline rounded w-1/2 cursor-pointer text-center" onClick={() => togglePopUp(index)}>
+                                        Leer completo
+                                    </b>
+                                </div>
+                            ) : olderProyect.description.slice(0, 100)}
                         </div>
                         <div className="flex items-center justify-start gap-2 pl-1">
                             <p className="underline">Acciones: </p>
                             <a className="text-4xl hover:text-gray-700" target="_blank" href={olderProyect.youtube}>
-                                
+
                             </a>
                         </div>
                         <div className="flex justify-end pr-4 pb-2">

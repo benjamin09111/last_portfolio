@@ -1,14 +1,17 @@
 .container {
     position: fixed;
     z-index: 99999;
+    width: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0);
+    border: 1px solid var(--third-color);
 }
 .overlay {
     position: fixed;
     z-index: 9999;
-    background: rgba(0, 0, 0, 0.502);
+    background: rgba(0, 0, 0, 0.966);
     height: 100vh;
     width: 100vw;
     top: 50%;

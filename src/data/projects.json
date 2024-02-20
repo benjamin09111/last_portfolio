@@ -2,7 +2,7 @@
     {
         "title": "Pregúntale al Experto",
         "subtitle": "Página profesional funcional de salud",
-        "description": "Página web funcional responsive conectada a un backend creado en node.js. El objetivo de la página es permitir al usuario realizar una consulta con profesionales sobre el embarazo o cuidado de su hijo. Debe rellenar una ficha médica, elegir un tipo de consulta y pagar (transbank, epayco), pudiendo utilizar un cupón de descuento. El desarrollo se basa en el frontend, y con trabajo en equipo se conectan ambos lados para hacer funcionar la aplicación.",
+        "description": "Página web funcional responsive conectada a un backend creado en Node.js. El objetivo de la página es permitir al usuario realizar una consulta con profesionales sobre el embarazo o cuidado de su hijo. Debe rellenar una ficha médica, elegir un tipo de consulta y pagar (transbank, epayco), pudiendo utilizar un cupón de descuento. El desarrollo se basa en el frontend, y con trabajo en equipo se conectan ambos lados para hacer funcionar la aplicación.",
         "tools": [
             "react",
             "javascript",
@@ -12,7 +12,7 @@
         ],
         "github": "",
         "youtube": "",
-        "demo": "",
+        "demo": "https://newpae.mimanualdelbebe.com/",
         "year": "2024",
         "keyword": "Frontend + Full Stack",
         "type": "Práctica",
