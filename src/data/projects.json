@@ -20,6 +20,26 @@
         "tags": "fullstack"
     },
     {
+        "title": "Your Blogs",
+        "subtitle": "Página de blogs con Astro",
+        "description": "Página creada con Astro utilizando blogs en formato .md. Esta página está creada para aprovechar y probar algunos recursos que ofrece Astro, tales como las transiciones y los blogs en formato .md. Astro es útil para páginas estáticas, y se presenta un ejemplo simple y ordenado.",
+        "tools": [
+            "astro",
+            "react",
+            "tailwind",
+            "css",
+            "html"
+        ],
+        "github": "https://github.com/benjamin09111/astro_blog",
+        "youtube": "",
+        "demo": "https://65d767d444e02c40132eb14d--papaya-bublanina-c3b4b1.netlify.app/",
+        "year": "2024",
+        "keyword": "Frontend",
+        "type": "Curso online",
+        "important": "",
+        "tags": "frontend"
+    },
+    {
         "title": "Visual: CHAT-GPT3",
         "subtitle": "Página visual/frontend temática moderna",
         "description": "Visual con temática CHAT-GPT3 basada en un curso básico y práctico de react, primer contacto con el framework. Simplemente frontend, no contiene backend o funcionalidades relacionadas.",

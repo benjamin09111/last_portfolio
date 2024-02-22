@@ -9,7 +9,7 @@ const Docencia = () => {
     return (
         <section id="docencia" className="md:bg-gray-950 md:border md:border-gray-800 md:mx-48 md:py-12 md:rounded-3xl flex flex-col justify-center items-center gap-4 mb-4">
             <div className="md:flex md:flex-col md:items-start docencia__content1 md:docencia__content2">
-                <h4 className="title_section text-3xl">Área Docencia</h4>
+                <h4 className="title_section text-3xl text-center">Área Docencia</h4>
                 <div className='flex flex-col flex-wrap md:flex-row gap-4 justify-center items-center mt-4'>
                     <div className={`${docencia === "UDP" ? "clicked" : "button"} cursor-pointer rounded flex gap-2 items-center justify-center pr-2`}>
                         <button className='py-2 pl-2' type='button' onClick={() => setDocencia("UDP")}>Universidad Diego Portales</button>

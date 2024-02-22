@@ -103,19 +103,19 @@ const Projects = () => {
                                     {
                                         project.youtube != "" &&
                                         <a className="text-4xl hover:text-gray-700" target="_blank" href={project.youtube}>
-                                            <span className="icon-[mdi--youtube] text-white"></span>
+                                            <span className="icon-[mdi--youtube]"></span>
                                         </a>
                                     }
                                     {
                                         project.github != "" &&
                                         <a className="text-4xl hover:text-gray-700" target="_blank" href={project.github}>
-                                            <span classname="icon-[mdi--github] text-white"></span>
+                                            <span class="icon-[ri--github-fill]"></span>
                                         </a>
                                     }
                                     {
                                         project.demo != "" &&
                                         <a className="text-4xl hover:text-gray-700" target="_blank" href={project.demo}>
-                                            <span className="icon-[icon-park-outline--upload-web] text-white"></span>
+                                            <span className="icon-[icon-park-outline--upload-web]"></span>
                                         </a>
                                     }
                                 </div>
@@ -163,7 +163,7 @@ const Projects = () => {
                                 <div className="flex items-center justify-start gap-2 pl-1">
                                     <p className="underline">Acciones: </p>
                                     <a className="text-4xl hover:text-gray-700" target="_blank" href={olderProyect.youtube}>
-
+                                    <span className="icon-[mdi--youtube]"></span>
                                     </a>
                                 </div>
                                 <div className="flex justify-end pr-4 pb-2">
