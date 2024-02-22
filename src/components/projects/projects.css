@@ -78,3 +78,53 @@
     border-left:  2px solid var(--text-color-secondary); /* Grosor y color del borde izquierdo */
     box-sizing: border-box;
 }
+
+.radio-item [type="radio"] {
+	display: none;
+}
+
+.radio-item label {
+	display: block;
+	padding: 10px 3rem;
+	border: 2px solid var(--text-color-third);
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 400;
+	min-width: 250px;
+	white-space: nowrap;
+	position: relative;
+	transition: 0.4s ease-in-out 0s;
+}
+.radio-item label:after,
+.radio-item label:before {
+	content: "";
+	position: absolute;
+	border-radius: 50%;
+}
+.radio-item label:after {
+	height: 19px;
+	width: 19px;
+	border: 2px solid rgb(133, 235, 235);
+	left: 19px;
+	top: calc(50% - 12px);
+}
+.radio-item label:before {
+	background: rgb(133, 235, 235);
+	height: 20px;
+	width: 20px;
+	left: 21px;
+	top: calc(50%-5px);
+	transform: scale(5);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s ease-in-out 0s;
+}
+.radio-item [type="radio"]:checked ~ label {
+	border-color: rgb(133, 235, 235);
+}
+.radio-item [type="radio"]:checked ~ label::before {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}

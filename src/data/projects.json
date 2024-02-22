@@ -16,7 +16,8 @@
         "year": "2024",
         "keyword": "Frontend + Full Stack",
         "type": "Práctica",
-        "important": "PAGADO"
+        "important": "PAGADO",
+        "tags": "fullstack"
     },
     {
         "title": "Visual: CHAT-GPT3",
@@ -32,7 +33,8 @@
         "year": "2024",
         "keyword": "Frontend",
         "type": "Curso online",
-        "important": ""
+        "important": "",
+        "tags": "frontend"
     },
     {
         "title": "Diabetes Care",
@@ -49,7 +51,8 @@
         "year": "2023",
         "keyword": "TIC Full Stack",
         "type": "Proyecto TIC",
-        "important": ""
+        "important": "",
+        "tags": "fullstack"
     },
     {
         "title": "Unity Bank",
@@ -67,6 +70,7 @@
         "year": "2022",
         "keyword": "Web Full Stack",
         "type": "Universidad",
-        "important": ""
+        "important": "",
+        "tags": "fullstack"
     }
 ]

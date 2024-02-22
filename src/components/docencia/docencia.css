@@ -1,3 +1,14 @@
+.button {
+    background: rgb(22, 22, 22);
+    color: rgb(138, 138, 138) !important;
+}
+
+.clicked {
+    color: #e2e2e2;
+    background: rgb(0, 55, 80);
+    transition: all 1s ease;
+}
+
 .docencia__content1, .docencia__content2 {
     position: relative;
     padding: 20px;
