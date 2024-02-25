@@ -1,4 +1,5 @@
 export default [
+    "/proyect_7.webp",
     "/proyect_5.webp",
     "/proyect_6.webp",
     "/proyecto_2.webp",
