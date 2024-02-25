@@ -39,10 +39,10 @@ const Projects = () => {
                 </div>
             </div>
             <div className="flex md:flex-row flex-col gap-2 justify-center items-center">
-                <div class="radio-item"><input name="radio" id="radio1" type="radio" onClick={() => setSearcher("all")} /><label className="bg-celeste" for="radio1">Todos</label></div>
-                <div class="radio-item"><input name="radio" id="radio2" type="radio" onClick={() => setSearcher("fullstack")} /><label for="radio2">Full Stack</label></div>
-                <div class="radio-item"><input name="radio" id="radio3" type="radio" onClick={() => setSearcher("frontend")} /><label for="radio3">Frontend</label></div>
-                <div class="radio-item"><input name="radio" id="radio4" type="radio" onClick={() => setSearcher("code")} /><label for="radio4">Código puro</label></div>
+                <div className="radio-item"><input name="radio" id="radio1" type="radio" onClick={() => setSearcher("all")} /><label className="bg-celeste" for="radio1">Todos</label></div>
+                <div className="radio-item"><input name="radio" id="radio2" type="radio" onClick={() => setSearcher("fullstack")} /><label for="radio2">Full Stack</label></div>
+                <div className="radio-item"><input name="radio" id="radio3" type="radio" onClick={() => setSearcher("frontend")} /><label for="radio3">Frontend</label></div>
+                <div className="radio-item"><input name="radio" id="radio4" type="radio" onClick={() => setSearcher("code")} /><label for="radio4">Código puro</label></div>
             </div>
             <div className="flex flex-col md:px-24 gap-8 md:w-full md:items-start md:flex-row flex-wrap md:justify-center md:mb-16">
                 {projects.map((project, index) => (
@@ -109,7 +109,7 @@ const Projects = () => {
                                     {
                                         project.github != "" &&
                                         <a className="text-4xl hover:text-gray-700" target="_blank" href={project.github}>
-                                            <span class="icon-[ri--github-fill]"></span>
+                                            <span className="icon-[ri--github-fill]"></span>
                                         </a>
                                     }
                                     {
